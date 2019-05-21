@@ -13,6 +13,7 @@ module.exports = {
   theme: 'ououe',
   themeConfig: {
     cover: '/img/cover.jpg',
+    pageGroup: 1,
     postTime: {
       createTime: '创建时间',
       lastUpdated: '最后修改'
