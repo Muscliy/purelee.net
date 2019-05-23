@@ -1,3 +1,4 @@
+zip -r dist.zip dist
 scp ./dist.zip root@www.purelee.net:/home/dist.zip
 ssh root@www.purelee.net '\
 cd /usr/share/nginx/html \
