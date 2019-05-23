@@ -6,3 +6,6 @@ cd /usr/share/nginx/html \
 && sudo rm -rf dist || true \
 && sudo unzip dist.zip \
 && sudo cp -r dist/* www'
+
+rm dist.zip
+rm -rf dist
