@@ -2,7 +2,7 @@ module.exports = {
   title: '向上人生',
   description: "路上的幸福时光",
   base: '/',
-  dest: "/dist",
+  dest: "dist",
   evergreen: true,
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -13,7 +13,7 @@ module.exports = {
   theme: 'ououe',
   themeConfig: {
     cover: '/img/cover.jpg',
-    pageGroup: 1,
+    pageGroup: 5,
     postTime: {
       createTime: '创建时间',
       lastUpdated: '最后修改'

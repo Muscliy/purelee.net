@@ -1,6 +1,7 @@
 ---
 title: iOS 打点统计代码实现
 lang: zh-CN
+display: home
 image: https://picsum.photos/1920/1080/?random&date=2016-01-07
 date: 2016-01-07
 tags:

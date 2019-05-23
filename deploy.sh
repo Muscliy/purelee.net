@@ -1,5 +1,5 @@
-scp ./dist.zip root@purelee.net:/home/dist.zip
-ssh root@purelee.net '\
+scp ./dist.zip root@www.purelee.net:/home/dist.zip
+ssh root@www.purelee.net '\
 cd /usr/share/nginx/html \
 && sudo cp /home/dist.zip /usr/share/nginx/html/dist.zip \
 && sudo rm -rf dist || true \

@@ -1,6 +1,7 @@
 ---
 title: 探究NSUserDefaults
 lang: zh-CN
+display: home
 image: https://picsum.photos/1920/1080/?random&date=2015-07-03
 date: 2015-07-03
 tags:

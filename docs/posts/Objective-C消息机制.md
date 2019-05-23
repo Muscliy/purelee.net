@@ -1,6 +1,7 @@
 ---
 title: Objective-C消息机制
 lang: zh-CN
+display: home
 image: https://picsum.photos/1920/1080/?random&date=2015-12-07
 date: 2015-12-07
 tags:

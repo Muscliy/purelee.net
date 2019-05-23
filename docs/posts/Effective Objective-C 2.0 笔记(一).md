@@ -1,6 +1,7 @@
 ---
 title: Effective Objective-C 2.0 笔记(一)
 lang: zh-CN
+display: home
 image: https://picsum.photos/1920/1080/?random&date=2015-12-11
 date: 2015-12-11
 tags:

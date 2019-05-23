@@ -8,7 +8,6 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "publish": "./scripts/publish.sh",
     "view-info": "vuepress view-info docs --temp .temp",
     "show-help": "vuepress --help"
   },

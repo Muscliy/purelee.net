@@ -1,6 +1,7 @@
 ---
 title: Find the current top view controller
 lang: zh-CN
+display: home
 image: https://picsum.photos/1920/1080/?random&date=2015-12-10
 date: 2015-12-10
 tags:
