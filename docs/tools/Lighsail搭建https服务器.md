@@ -18,6 +18,7 @@ Amazon Lightsail 是一款轻量级的服务器，选择他做为我的入门ser
 <!-- more -->
 
 ## SSH连接
+---
 
 1、下载SSH 密钥对
 
@@ -36,6 +37,7 @@ ssh-add -K LightsailDefaultKey-ap-northeast-1.pem
 
 
 ## 更改默认登录用户
+---
 
 我有洁癖喜欢将机器的默认用户，这样方便在后期写一些自动化部署脚本部署你服务
 
@@ -73,6 +75,7 @@ reboot
 
 
 ## 配置https
+---
 
  [Let's Encrypt](https://www.vpser.net/build/letsencrypt-certbot.html)是很火的一个免费SSL证书发行项目，自动化发行证书，证书有90天的有效期。适合个人使用或者临时使用，不用再忍受自签发证书不受浏览器信赖的提示。去年VPS侦探曾经说过[Let's Encrypt的使用教程](https://www.vpser.net/build/letsencrypt-free-ssl.html)，但是Let's Encrypt已经发布了新的工具[certbot](https://www.vpser.net/build/letsencrypt-certbot.html)，虽然是新的工具，但是生成证书的使用方法和参数是基本一致的，证书续期更简单了。但是目前看[certbot](https://www.vpser.net/build/letsencrypt-certbot.html)在一些老版本的Linux发行版上的兼容性还是有问题的，特别是在CentOS 5上因为python版本过低是无法用的，CentOS 6上需要先[安装epel](https://www.vpser.net/manage/centos-rhel-linux-third-party-source-epel.html)才行，当然也有很多第三方的工具你也可以自己去尝试一下。
 
@@ -116,6 +119,7 @@ ssl_trusted_certificate /etc/letsencrypt/live/domain.com/chain.pem;
 
 
 ## 完善HTTPS
+---
 
 执行以下命令
 
@@ -147,6 +151,7 @@ ssl_stapling_verify on;
 
 
 ## 强制HTTPS
+---
 
 如需强制只需要将80端口301到https
 
