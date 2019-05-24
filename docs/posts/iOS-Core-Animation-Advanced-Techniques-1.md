@@ -5,9 +5,8 @@ image: https://picsum.photos/1920/1080/?random&date=2016-01-19
 date: 2016-01-19
 tags:
   - Animation
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 在iOS界面开发中离不开UIView(视图), 所有的可视化控件基本继承来自UIView，UIView就是在屏幕上显示的一个矩形块(比如文字、图片、视频)。

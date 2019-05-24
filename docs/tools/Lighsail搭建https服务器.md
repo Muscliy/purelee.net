@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2019-05-23
 date: 2019-05-23
 tags:
   - Https
-  - Nginx
 categories:
-  - Server
+  - Nginx
 meta:
   - name: description
     content: Amazon Lightsail 是一款轻量级的服务器，选择他做为我的入门server搭建是进过深思熟虑的，一方面是大厂产品，而且可以无限的为你的私有IP进行静态IP的分离与绑定(对ss速度没有多大洁癖的话，足够了)。另一方面便宜(3.5美元一个月)，还有安全的防火墙功能设置。

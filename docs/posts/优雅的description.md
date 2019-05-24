@@ -5,9 +5,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-23
 date: 2015-12-23
 tags:
   - NSFoundation
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 在开发过程中，我们经常要打印并查看对象信息，一种是通过NSLog来输出一个对象的属性。

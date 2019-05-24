@@ -5,7 +5,7 @@ display: home
 image: https://picsum.photos/1920/1080/?random&date=2016-07-22
 date: 2016-07-22
 tags:
-  - Tool
+  - Code Review
 categories:
   - Team
 meta:

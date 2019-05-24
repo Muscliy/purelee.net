@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-07
 date: 2015-12-07
 tags:
   - NSFoundation
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 在OC 中给nil发送一个消息是不会发生任何事情了，但是给一个object发送一个没有定义实现的消息是回发生crash。

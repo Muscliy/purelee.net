@@ -5,9 +5,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-13
 date: 2015-12-13
 tags:
   - Standard
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 我们在构建应用程序时，可能想将其中部分代码用于后续项目，也可能想把某些代码发布出去，供他人使用。即便现在还不想这么做，将来也总会有用到的时候。如果决定重用代码，那么我们在编写接口时就会将其设计成易于复用的形式。这需要用到Objective-C语言中常见的编程范式，同时还需要了解各种可能碰到的陷阱。

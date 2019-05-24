@@ -5,9 +5,8 @@ image: https://picsum.photos/1920/1080/?random&date=2016-01-20
 date: 2016-01-20
 tags:
   - Standard
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: Objective-C语言有一项特性叫做“协议（protocol）”,他和java里面的“接口相似”。Objective-C不支持多重继承，因而我们把某个类应该实现的一系列方法定义在协议里面。协议最常见的用途是实现委托模式，不过也有其他用法。理解并善用协议可以令代码变得更易维护，因为协议这种方式很好地描述接口。

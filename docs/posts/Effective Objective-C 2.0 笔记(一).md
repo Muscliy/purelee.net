@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-11
 date: 2015-12-11
 tags:
   - Standard
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: Obejctive-C通过一套全新的语法，在C语言基础上添加了面向对象特性。Objectice-C的语法中频繁使用方括号，而且不吝于写出极长的方法名，这通常令许多人觉得此语言较为冗长。其实这样写出来的代码十分易读，只是C++或者Java程序员不太适应。

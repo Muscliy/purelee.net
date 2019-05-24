@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-10
 date: 2015-12-10
 tags:
   - Optimize
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
   - content: 关于在iOS中怎样正确的找到当前的viewcontroller

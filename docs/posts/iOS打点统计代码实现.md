@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2016-01-07
 date: 2016-01-07
 tags:
   - Optimize
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 很早之前拜读了limboy 的iOS 统计打点那些事这篇文章，之后又了解了heapanalytics可视化全埋点，对我的帮助很大。

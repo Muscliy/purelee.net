@@ -19,12 +19,12 @@ module.exports = {
       lastUpdated: '最后修改'
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/posts/' },
-      { text: 'Tool', link: '/tools/' },
-      { text: 'Tags', link: '/tag/' },
-      { text: 'Categories', link: '/category/'},
-      { text: 'About', link: '/about/' }
+      { text: '主页', link: '/' },
+      { text: '文章', link: '/posts/' },
+      { text: '工具', link: '/tools/' },
+      { text: '标签', link: '/tag/' },
+      { text: '分类', link: '/category/'},
+      { text: '关于', link: '/about/' }
     ],
     footer: [
       { text: 'Github', link: 'https://github.com/Muscliy' }

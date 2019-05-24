@@ -5,10 +5,9 @@ display: home
 image: https://picsum.photos/1920/1080/?random&date=2018-02-12
 date: 2018-01-31
 tags:
-  - Tool
   - Animation
 categories:
-  - Efficient
+  - Desgin
 meta:
   - name: description
     content: 使用Texture Packer制作动画贞雪碧图，可以大大提高我们在动画编程的效率，

@@ -6,9 +6,8 @@ image: https://picsum.photos/1920/1080/?random&date=2015-12-12
 date: 2015-12-12
 tags:
   - Standard
-  - Objective-C
 categories:
-  - iOS
+  - Objective-C
 meta:
   - name: description
     content: 用Objective-C等面向对象语言编程时，“对象”就是“基本构造单元”，开发者可以通过对象来存储并传递数据。在对象之间传递数据并执行任务的过程就叫做“消息传递”。若想编写出高效且易维护的代码，就一定要熟悉这两个特性的工作原理。
