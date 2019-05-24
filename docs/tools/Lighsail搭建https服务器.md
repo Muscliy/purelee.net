@@ -23,13 +23,13 @@ Amazon Lightsail 是一款轻量级的服务器，选择他做为我的入门ser
 
 2、修改SSH秘钥对的权限
 
-```js
+```bash
 chomd 666 LightsailDefaultPrivateKey-ap-northeast-1.pem
 ```
 
 3、将秘钥对添加
 
-```js
+```bash
 ssh-add -K LightsailDefaultKey-ap-northeast-1.pem
 ```
 
@@ -41,32 +41,32 @@ ssh-add -K LightsailDefaultKey-ap-northeast-1.pem
 
 1、创建root的密码
 
-```js
+```bash
 sudo passwd root
 ```
 
 2、切换到root用户
 
-```js
+```bash
 su
 ```
 
 3、修改ssh 登录方式
 
-```js
+```bash
 vi /etc/ssh/sshd_config
 ```
 
 4、修改配置
 
-```js
+```bash
 PermitRootLogin yes
 PasswordAuthentication yes
 ```
 
 5、重启
 
-```js
+```bash
 reboot
 ```
 
@@ -80,7 +80,7 @@ reboot
 
 安装方式参照官网的方式撸一遍OK了,官网会根据不同的系统和不同的代理服务有不同的教程， 我选用的nginx和centos7
 
-```js
+```bash
 $ yum -y install yum-utils
 $ yum-config-manager --enable rhui-REGION-rhel-server-extras rhui-REGION-rhel-server-optional
 $ sudo yum install certbot python2-certbot-nginx
@@ -102,9 +102,9 @@ sudo certbot certonly --standalone -d domain.com -d www.domain.com
 在接下来的nginx.conf 中添加
 
 ```js
- ssl_certificate     /etc/letsencrypt/live/domain.com/cert.pem;
- ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem;
- ssl_trusted_certificate /etc/letsencrypt/live/domain.com/chain.pem;
+ssl_certificate     /etc/letsencrypt/live/domain.com/cert.pem;
+ssl_certificate_key /etc/letsencrypt/live/domain.com/privkey.pem;
+ssl_trusted_certificate /etc/letsencrypt/live/domain.com/chain.pem;
 ```
 
 
@@ -119,29 +119,29 @@ sudo certbot certonly --standalone -d domain.com -d www.domain.com
 
 执行以下命令
 
-```js
+```bash
 openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 ```
 
 在nginx.conf 中加入
 
-```js
+```bash
 ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 ```
 
 SSLv3是有漏洞的，所以不应该启用，并启用启用向前保密。
 
-```js
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-  ssl_prefer_server_ciphers on;
-  ssl_dhparam /etc/ssl/certs/dhparam.pem;
-  ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-R
+```bash
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_prefer_server_ciphers on;
+ssl_dhparam /etc/ssl/certs/dhparam.pem;
+ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-R
 SA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
-  ssl_session_timeout 1d;
-  ssl_session_cache shared:SSL:50m;
-  ssl_stapling on;
-  ssl_stapling_verify on;
-  #add_header Strict-Transport-Security max-age=15768000;
+ssl_session_timeout 1d;
+ssl_session_cache shared:SSL:50m;
+ssl_stapling on;
+ssl_stapling_verify on;
+#add_header Strict-Transport-Security max-age=15768000;
 ```
 
 
@@ -150,7 +150,7 @@ SA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE
 
 如需强制只需要将80端口301到https
 
-```js
+```json
 server {
     listen 80;
     return 301 https://$host$request_uri;
