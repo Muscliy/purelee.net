@@ -1,5 +1,5 @@
 ---
-title: Lighsail搭建https服务器
+title: Lightsail搭建https服务器
 lang: zh-CN
 display: home
 image: https://picsum.photos/1920/1080/?random&date=2019-05-23
